@@ -1,0 +1,56 @@
+body {
+    direction: rtl;
+    font-family: Tahoma, sans-serif;
+    background-color: #d4c8c8;
+    margin: 30px;
+    padding: 0;
+    color: #333;
+}
+
+h2 {
+    color: #006699;
+}
+
+form {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #006699;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+a {
+    color: #006699;
+    text-decoration:double;
+}
+
+.success {
+    background-color: #d4edda; /* سبز ملایم */
+    color: #155724;            /* متن سبز تیره */
+    padding: 15px;
+    border: 1px solid #c3e6cb;
+    border-radius: 5px;
+}

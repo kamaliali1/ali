@@ -1,15 +1,6 @@
-<?php
-session_start();
-?>
+<?php include('../includes/header.php'); ?>
 
-<!DOCTYPE html>
-<html lang="fa">
-<head>
-    <meta charset="UTF-8">
-    <title>صفحه اصلی</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+
     <h2>صفحه اصلی</h2>
 
     <?php if (isset($_SESSION['user'])): ?>
@@ -26,5 +17,6 @@ session_start();
         <p><a href="register.php">ثبت نام</a></p>
         <p><a href="login.php">ورود</a></p>
     <?php endif; ?>
-</body>
-</html>
+
+
+<?php include('../includes/footer.php'); ?>

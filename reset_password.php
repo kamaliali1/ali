@@ -20,11 +20,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         $stmt = $pdo->prepare("DELETE FROM password_resets WHERE token = ?");
         $stmt->execute ([$token]);
 
-        $_SESSION['message'] = '<p style="color: green;">رمز عبور با موفقیت تغییر یافت.</p>';
+        $_SESSION['message'] = 'رمز عبور با موفقیت تغییر یافت';
         header("Location: login.php");
         exit;
     } else {
-        $_SESSION['message'] = '<p style="color: red;">توکن نامعتبر یا منقضی شده است.</p>';
+        $_SESSION['message'] = 'توکن نامعتبر یا منقضی شده است.</p>';
         header("Location: reset_password.php?token=" . htmlspecialchars($token));
         exit;
     }

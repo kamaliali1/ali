@@ -8,7 +8,7 @@ body {
 }
 
 h2 {
-    color: #006699;
+    color: hwb(180 6% 59% / 0.781);
 }
 
 form {
@@ -43,7 +43,7 @@ button {
 }
 
 a {
-    color: #006699;
+    color: #1f77d4;
     text-decoration:double;
 }
 

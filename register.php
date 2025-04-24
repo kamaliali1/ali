@@ -36,7 +36,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     $email = $_POST['email'];
     $password = $_POST['password'];
     $role = 'user';  // نقش پیش‌فرض کاربر
-
+    
+    
+        // اعتبارسنجی نام (فقط حروف فارسی مجاز هستند)
+        if (!preg_match("/^[\x{0600}-\x{06FF}\s]+$/u", $name)) {
+           echo "نام باید فقط شامل حروف فارسی باشد.";
+           
+        }
+        else
+    
+        // ادامه کد ویرایش پروفایل...
+    
     // بررسی ایمیل
     if (!validateEmail($email)) {
         echo "ایمیل وارد شده صحیح نیست.";

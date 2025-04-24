@@ -14,7 +14,7 @@ session_start();
 
     <?php if (isset($_SESSION['user'])): ?>
         <p>سلام، <?php echo htmlspecialchars($_SESSION['user']['name']); ?>!</p>
-        <p>نقش شما: <?php echo htmlspecialchars($_SESSION['user']['role']); ?></p>
+        
 
         <?php if ($_SESSION['user']['role'] === 'admin'): ?>
             <p><a href="admin_panel.php">ورود به پنل مدیریت</a></p>

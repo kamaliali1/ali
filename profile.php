@@ -21,7 +21,7 @@ $user = $_SESSION['user'];
 <?php endif; ?>
 
 <p>نام: <?= htmlspecialchars($user['name']) ?></p>
-<p>نقش: <?= $user['role'] ?></p>
+
 
 <p>
     <a href="edit_profile.php">ویرایش پروفایل</a> 

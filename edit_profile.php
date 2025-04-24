@@ -12,6 +12,11 @@ $user_id = $_SESSION['user']['id'];
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $name = trim($_POST['name']);
     $email = trim($_POST['email']);
+    if (!preg_match("/^[\x{0600}-\x{06FF}\s]+$/u", $name)) {
+        $error ="نام باید فقط شامل حروف فارسی باشد.";
+        
+     }
+     else
 
     if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
         $error = "ایمیل وارد شده معتبر نیست.";
